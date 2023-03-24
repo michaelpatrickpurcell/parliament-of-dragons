@@ -9,16 +9,16 @@ During the game, you will address a series of questions about the colonists and 
 You will portray a dragon who is one of the rulers of Dragonhome. To create your character,
   1. Describe the lands and creatures on Dragonhome that you claim as your own.
   2. Describe your background, mannerisms, and physical appearance.
-  3. Describe two types\footnote[1]{This is intentionally vague. If in doubt, pick any two of the\\standard interrogatives (see {\setmainfont{Cinzel-Bold}\scriptsize Factual Questions} for details).} of questions about the colonists that you can answer.
+  3. Describe two types of questions about the colonists that you can answer.
   4. Describe one problem that the colonists have caused and that you would like have solved.
 
 Introduce yourself to the other characters before the meeting begins.
 
 # Miniatures
-Use miniatures of some kind to represent your dragon characters. You should collectively decide whose miniature is most impressive. That player's character will be the Alpha dragon among the rulers of Dragonhome. 
+Use miniatures of some kind to represent your dragon characters. You should collectively decide whose miniature is most impressive. That player's character will be the alpha dragon among the rulers of Dragonhome. 
 
 ## Decorum
-The Alpha dragon has the responsibility to ensure, however they deem appropriate, that everyone has a fair chance to contribute and that the discussion stays focused on the topic at hand.
+The alpha dragon has the responsibility to ensure, however they deem appropriate, that everyone has a fair chance to contribute and that the discussion stays focused on the topic at hand.
 
 # Gameplay
 The game takes place over a series of five rounds. During each of the first four rounds, you will discuss one of the topics of interest. During the last round, you will discuss how to respond to the issues raised in previous rounds. 
