@@ -14,28 +14,28 @@
 \setmainfont{URWClassico}
 %\setmainfont{Qwigley}
 
-\setkomafont{section}{\setmainfont{Cinzel}\LARGE}
-\setkomafont{subsection}{\setmainfont{Cinzel}\Large}
-\setkomafont{subsubsection}{\setmainfont{Cinzel}\large}
+\setkomafont{section}{\setmainfont{Cinzel-Bold}\LARGE}
+\setkomafont{subsection}{\setmainfont{Cinzel-Bold}\Large}
+\setkomafont{subsubsection}{\setmainfont{Cinzel-Bold}\large}
 
 % Adjust spacing before and after section headings
 \RedeclareSectionCommand[
   runin=false,
-  beforeskip=1.5\baselineskip,
+  beforeskip=1.0\baselineskip,
   afterskip=-0.0\baselineskip
 ]{section}
 
 % Adjust spacing before and after subsection headings
 \RedeclareSectionCommand[
   runin=false,
-  beforeskip=1.5\baselineskip,
+  beforeskip=1.0\baselineskip,
   afterskip=-0.0\baselineskip
 ]{subsection}
 
 % Adjust spacing before and after subsubsection headings
 \RedeclareSectionCommand[
   runin=false,
-  beforeskip=1.5\baselineskip,
+  beforeskip=1.0\baselineskip,
   afterskip=-0.0\baselineskip
 ]{subsubsection}
 
@@ -43,7 +43,22 @@
 \usepackage{enumitem}
 \setlist[description]{labelindent=0pt, labelsep=\widthof{ }, leftmargin=\widthof{\textbf{License: }}, font=\setmainfont{URWClassico}\bfseries}
 
-\usepackage{hyperref}
+\usepackage[hang,flushmargin]{footmisc}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\footnoterule}{%
+  \kern -3pt
+  \hrule width \textwidth height 0.5pt
+  \kern 2pt
+}
+
+\usepackage[hidelinks]{hyperref}
 \usepackage[type={CC}, version={4.0}, modifier={by-sa}]{doclicense} % Add text and icons for creative commons license
 %\usepackage{array}
 
@@ -61,20 +76,8 @@
 Parliament
 
 of Dragons
-%\begin{tikzpicture}
-%\node[inner sep=0pt, fill opacity=0] at (0,0) {\textcolor{Red}{Parliament}};
-%\node[inner sep = 0pt] at (0,-1.75cm) {\textcolor{Red}{of Dragons}};
-%
-%\node[inner sep=0pt] at (0,0) {Parliament};
-%\node[inner sep = 0pt] at (0,-1.75cm) {of Dragons};
-%\end{tikzpicture}
 \vfill
-\includegraphics[scale=0.05]{dragon_bust.png}
-%\includegraphics[scale=0.1]{dragon_profile.png}
-
-%\begin{tikzpicture}
-%\node[draw, line width=0.25cm, rotate=7.5, inner sep=1pt] at (0,0) {\includegraphics[scale=0.47]{alien_beach_vacation.png}};
-%\end{tikzpicture}
+\includegraphics[scale=0.075]{Images/dragon_on_rocks.png}
 \vfill
 \huge
 %\setmainfont{Cochin}
@@ -85,31 +88,16 @@ by Michael Purcell
 \end{center}
 \end{titlepage}
 \thispagestyle{empty}
-\enlargethispage{3.5\baselineskip}
-\setmainfont{Tex Gyre Chorus}
-\large
-\noindent Esteemed Colleagues,
-
-As you may be aware, several companies have recently developed magical devices commonly known simply as ``staffs''.
-These devices allow their users to cast spells in new and powerful ways. 
-A few pioneering students have already started using staffs.
-Doubtless, many more will soon follow their example.
-
-So, we should to try to understand what the impact of these staffs will be for us here at the school.
-To that end, you are cordially invited to attend a mandatory meeting tomorrow to discuss the matter.
-I have identified the following topics as being of particular interest:
-\begin{enumerate}[nosep]
-	\item Educational Outcomes
-	\item Safety \& Logistics
-	\item Academic Integrity
-	\item Equal Opportunity
-\end{enumerate}   
-
-Please familiarize yourself with some aspects of how staffs work and what they can do ahead of time.
-By sharing our expertise, we can all learn a bit more about this exciting and powerful new technology.
-
-\hspace{4.5cm}\huge- M
-\setmainfont{URW Classico}
+\enlargethispage{1.75\baselineskip}
+\setmainfont[Scale=2.0]{Tex Gyre Chorus}
+\Huge
+\begin{center}
+Dragonhome
+\smallskip
+\vfill
+\includegraphics[scale=0.33]{Images/island_map.png}
+\end{center}
+\setmainfont[Scale=1.0]{URW Classico}
 \normalsize
 
 \newpage
@@ -118,61 +106,63 @@ By sharing our expertise, we can all learn a bit more about this exciting and po
 \section*{Overview}
 This is a worldbuilding game. It is intended for groups of three to six players and can be played in about one hour.
 
-You will assume the roles of teachers at a school of witchcraft and wizardry. Your students have recently started using staffs, a new kind of device that changes the ways in which they can interact with magic. You have gathered to discuss the situation and decide how you want to respond.
+You will assume the roles of dragons who have long been the undisputed rulers of Dragonhome, the island continent on which you reside. Recently, however, a fleet of ships carrying settlers from afar arrived and they have begun establishing a new colony. You have gathered in a rare Parliament of Dragons to discuss the situation and decide how you want to respond.
 
-During the game, you will address a series of questions about how staffs work and how they will affect life at the school. You will invent the answers to these questions as you play. By doing so, you will describe the world in which your characters live, how magic works there, and how it will be affected by this new technology.
+During the game, you will address a series of questions about the colonists and how their arrival will affect life on Dragonhome. You will invent the answers to these questions as you play. By doing so, you will describe the world in which your characters live, who the colonists are, and why they have encroached upon your domain.
+
 
 \newpage
-\enlargethispage{3.5\baselineskip}
-
+\enlargethispage{1.75\baselineskip}
 \section*{Characters}
-You will portray a teacher who works at the school. To create your character,
+You will portray a dragon who is one of the rulers of Dragonhome. To create your character,
 \begin{enumerate}[nosep]
-	\item Describe the subject that you teach.
-	\item Describe your mannerisms and physical appearance.
-	\item Describe two types of questions about staffs that you can answer.
+	\item Describe the lands and creatures on Dragonhome that you claim as your own.
+	\item Describe your background, mannerisms, and physical appearance.
+	\item Describe two types\footnote[1]{This is intentionally vague. If in doubt, pick any two of the\\standard interrogatives (see {\setmainfont{Cinzel-Bold}\scriptsize Factual Questions} for details).} of questions about the colonists that you can answer.
+	\item Describe one problem that the colonists have caused and that you would like have solved.
 \end{enumerate}
 Introduce yourself to the other characters before the meeting begins.
 
-\section*{Gameplay}
-The game takes place over a series of five rounds. 
-During each of the first four rounds, you will discuss one topic that the headmaster has identified as being of particular interest.
-During the last round, you will discuss how to respond to the issues raised in previous rounds. 
+\section*{Minatures}
+Use miniatures of some kind to represent your dragon characters. You should collectively decide whose miniature is most impressive. That player's character will be the Alpha dragon among the rulers of Dragonhome. 
 
 \newpage
-\enlargethispage{3.5\baselineskip}
+\enlargethispage{1.75\baselineskip}
+\subsection*{Decorum}
+The Alpha dragon has the responsibility to ensure, however they deem appropriate, that everyone has a fair chance to contribute and that the discussion stays focused on the topic at hand. %In addition to their administrative duties, the facilitator may (and should) contribute to the discussion via their character as usual. 
+
+\section*{Gameplay}
+The game takes place over a series of five rounds. 
+During each of the first four rounds, you will discuss one of the topics of interest.
+During the last round, you will discuss how to respond to the issues raised in previous rounds. 
 
 \subsection*{Topics}
-The headmaster has identified four topics of particular interest for discussion:
+There are four topics of interest:
 \begin{enumerate}[nosep]
-	\item Educational Outcomes
-	\item Safety \& Logistics
-	\item Academic Integrity
-	\item Equal Opportunity
+	\item Stealing the colonists' treasure.
+	\item Instilling fear into the hearts of the colonists.
+	\item Eating the colonists and/or their livestock.
+	\item Demonstrating the power and majesty of the dragons of Dragonhome to the colonists.
 \end{enumerate}
 In each of the first four rounds, you will discuss one of these topics.
 
-\subsection*{Facilitators}
-One player should act as the facilitator in each round. Their job is to ensure that everyone has a fair chance to contribute and that the discussion stays focused on the topic at hand. In addition to their administrative duties, the facilitator may (and should) contribute to the discussion via their character as usual. 
-
 \newpage
-\enlargethispage{3.5\baselineskip}
+\enlargethispage{1.75\baselineskip}
 
 \subsection*{Questions}
-During the game, you will ask and answer questions both about staffs and about the game's setting.
+During the game, you will ask and answer questions both about the colonists and about the game's setting.
 You will invent the answers to these questions as they arise to describe the world that your characters inhabit.
 
 \subsubsection*{Factual Questions}
-
 Factual questions are questions about the nature of some part of the game's setting.
-These questions are usually stated using one of the standard interrogatives: who, what, where, when, why, and how.
+These questions are usually stated using a standard interrogatives: who, what, where, when, why, or how.
 
 Whoever is best suited to answer each factual question should do so.
 Your answers should be consistent with any details about the setting that have been previously established.
 Beyond that, however, you are free to invent any details you like as a part of your answers.
 
 \newpage
-\enlargethispage{3.5\baselineskip}
+\enlargethispage{1.75\baselineskip}
 
 \subsubsection*{Socratic Questions}
 Socratic questions are questions that encourage critical thinking.
@@ -192,25 +182,20 @@ After someone answers a factual question, you should use Socratic questions to h
 \newpage
 \enlargethispage{1.75\baselineskip}
 
-\subsection*{Action Items}
+\subsection*{Taking Action}
 During the last round, your job is to decide what you are going to do next.
 You should describe what you think needs to be done, what you can do yourselves, and what you need help with.
+\blfootnote{\textbf{Contact}: \href{mailto:pod.ttrpg@gmail.com}{pod.ttrpg@gmail.com}}
+\blfootnote{\textbf{License}: \raggedright\doclicenseLongText}
 
-As in the previous rounds, you should use Socratic questions to help each other understand what you are proposing and why you think that your proposal describes a reasonable course of action.
+As in the previous rounds, you should use Socratic questions to help each other understand what you are proposing and why your proposal describes a reasonable course of action.
 
 \vfill
+
 \begin{center}
-%\includegraphics[scale=0.09]{Images/druid_Staff.png}
+\includegraphics[scale=0.0625]{Images/dragon_on_rocks2.png}
 \end{center}
+
 \vfill
-%\hrulefill
-\begin{description}[nosep]
-\item[\textbf{Design}:] Michael Purcell \\
-\item[\textbf{Contact}:] \href{mailto:sm.ttrpg@gmail.com}{sm.ttrpg@gmail.com}\\
-\item[\textbf{License}:] \doclicenseText%This work is licensed under a ``CC BY 4.0'' license.
-\end{description}
-%\begin{tabular}{@{}m{\columnwidth-\widthof{\Huge{\doclicenseIcon}}-0.5cm}@{\hspace{0.05cm}}m{\widthof{\Huge{\doclicenseIcon}}}@{}}
-%{\textbf{License}: This work is licensed\newline under a ``CC BY 4.0'' license.} & \Huge{\doclicenseIcon}\\
-%\end{tabular}
 
 \end{document}
